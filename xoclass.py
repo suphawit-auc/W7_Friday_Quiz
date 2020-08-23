@@ -4,12 +4,18 @@
 # In[9]:
 
 
+
 class Board :
     def __init__(self):
         self.board= [["-","-","-"],["-","-","-"],["-","-","-"]]
         self.game_stillplay=True
         self.winner=None
         self.player="X"
+        self.turn = 0
+    #def clearBoard(self) :
+    	#for i in range(2) :
+    		#for j in range(2) :
+    			 #board[i][j] = "-"
     def win_Check(self):
         row1=self.board[0][0]==self.board[0][1]==self.board[0][2]!="-"
         row2=self.board[1][0]==self.board[1][1]==self.board[1][2]!="-"
@@ -43,8 +49,7 @@ class Board :
             self.winner=self.board[2][2]
         if diago2:
             self.winner=self.board[2][0]
-        else:
-            self.winner=None
+        
     def tie_Check(self):
         for k in self.board:
             if '-' in k :
@@ -68,17 +73,21 @@ class Board :
                 self.player='X'
         if self.winner=='X':
             print ('X is the winner!!')
+            #clearBoard()
         elif self.winner=='O':
             print ('O is the winner!!')
+            #clearBoard()
         elif self.winner==None:
             print('Tie game!!')
+            #clearBoard()
     def getChar(self,position):
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
         return self.board[list1[position-1][0]][list1[position-1][1]]
+        self.turn = self.turn + 1 
+        return self.turn 
     def setChar(self,position):
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
         self.board[list1[position-1][0]][list1[position-1][1]]=self.player
-    #ทำเคลียบอร์ดด้วย
 
 
 # In[10]:
@@ -97,8 +106,13 @@ class Printer :
 class TextInput() :
     def getInput(self,obj):  
         position=int(input("Choose where you want to place from 1-9: "))
-        obj.setChar(position)
-     #เช็คตัวซ้ำทำด้วย     
+        obj.setChar(position) 
+        #if board[position] == "-" :
+	
+  	#else: 
+  		#print("cannot that number")
+  		#continue
+      
 
 
 # In[12]:
@@ -106,4 +120,3 @@ class TextInput() :
 
 table = Board()
 table.startgame()
-
