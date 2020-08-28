@@ -1,11 +1,22 @@
+commit 98ca49412e744200dc09f5565e6d0d6b0e562d15
+Author: Suphawit Auchariyamet <s6201012620333@email.kmutnb.ac.th>
+Date:   Fri Aug 28 14:44:05 2020 +0700
 
-commit d9342338d8f7b01bb6b7df54802e627f379efcca (HEAD -> master)
+    error_check add
+
+commit 056dcc8a11375fa9cce0bfdfc21557c367d16600
+Author: PARINYA JAIHARN <s6201012620155@email.kmutnb.ac.th>
+Date:   Tue Aug 25 00:46:30 2020 +0700
+
+    add commit log
+
+commit d9342338d8f7b01bb6b7df54802e627f379efcca
 Author: PARINYA JAIHARN <s6201012620155@email.kmutnb.ac.th>
 Date:   Tue Aug 25 00:40:01 2020 +0700
 
     Fix bug that cannot clear board
 
-commit 3cd0f202375610dc9051205cc8342756e73ebb3b (origin/master)
+commit 3cd0f202375610dc9051205cc8342756e73ebb3b
 Author: wichasith <s621012610079@email.kmutnb.ac.th>
 Date:   Sun Aug 23 23:28:41 2020 +0700
 
@@ -17,12 +28,6 @@ Date:   Fri Aug 21 22:34:23 2020 +0700
 
     add commit log
 
-commit bd4d9268f996d902d4273c263499cab77a90c8e4
-Author: Suphawit Auchariyamet <s6201012620333@email.kmutnb.ac.th>
-Date:   Fri Aug 21 22:31:52 2020 +0700
-
-    class Board class Printer class Textinput Create
-    
 commit bd4d9268f996d902d4273c263499cab77a90c8e4
 Author: Suphawit Auchariyamet <s6201012620333@email.kmutnb.ac.th>
 Date:   Fri Aug 21 22:31:52 2020 +0700
